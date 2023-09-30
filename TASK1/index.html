@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Content Management Tool</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  
+</head>
+<body>
+  <div id="left-column">
+    <img src="Blog post.gif" alt="Content management logo" width="300px" height="300px" style="margin-bottom: 70px;"/>
+    <h1 style="margin-bottom: 15px;">CONTENT<h1>
+    <h1>MANAGEMENT TOOL</h1>
+  </div>
+
+  <div id="container">
+    <div id="right-column">
+    <h1>SUMMARY</h1>
+    <textarea id="textarea" draggable="true" placeholder="ENTER YOUR SUMMARY..."></textarea>
+    <h2 style="justify-content: left; margin-right: 60%;">UPLOAD IMAGES </h2>
+    <input type="file" id="imageUploadBtn" accept="image/*" onchange="previewImage(event)" draggable="true" />
+    <h2 style="justify-content: left; margin-right: 60%;">UPLOAD VIDEOS</h2>
+    <input type="file" id="videoUploadBtn" accept="video/*" onchange="previewVideo(event)" draggable="true" />
+    <div id="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)">DROP HERE...</div>
+    <button id="openBlogBtn" onclick="openBlog()">OPEN BLOG</button>
+        </div>
+  </div>
+</body>
+</html>
